@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15d7f34894.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Roboto Task Manager</h1>
+        <button type="" class="darkmode">Dark Mode <i class="fa-solid fa-toggle-off"></i></button>
+    </header>
+
+    <main>
+        <div class="container-left">
+            <div class="task-input">
+                <input type="text" placeholder=" Add your Task" id="task-input">
+                <button class="add-task" id="add-task">Add Task</button>
+            </div>
+        
+        
+            <div class="task-list">
+                <ul class="tasks" id="task-list">
+                    
+                </ul>
+                <h3 class="tasks-done">Erledigte Aufgaben</h3>
+                <ul id="done-list" class="done-list">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-right">
+
+            <div class="calender-header">
+                <button class="prev-month" id="prev-month">&lt;</button>
+                <h2 class="monthNames" id="month-label"></h2>
+                <button class="next-month" id="next-month">&gt;</button>
+            </div>
+
+            <div class="calender" id="calender"></div>
+            <div class="timer">
+                <div class="clock"></div>
+                <button class="start">Start</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
